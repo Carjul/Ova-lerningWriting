@@ -3,7 +3,7 @@ import { useSelector,useDispatch } from "react-redux"
 import { Redirect,Link } from "react-router-dom"
 import { salir} from "../redux/actions"
 import icon from '../assets/salida.png'
-import './cerrar.css'
+
 
 export default function Exit() {
  const dispatch= useDispatch()

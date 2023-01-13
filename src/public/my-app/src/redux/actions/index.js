@@ -3,7 +3,12 @@ export const ENV_DATA = "ENV_DATA";
 export const USER_DATA = "USER_DATA";
 export const REGISTRO = "REGISTRO";
 export const SALIR = "SALIR";
+export const TEMA = "TEMA";
 
+export function chageTema(data) {
+  return { type: TEMA, payload:data }
+}
+// const api='http://localhost:3001'
 export function login(data) {
     return (dispatch) => {
       axios.post('/login', data)

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from 'react-redux'
 import * as actions from "../redux/actions/index.js";
 import { Redirect, Link } from 'react-router-dom'
-import './form.css'
+
 
 function Form() {
   var _id;
@@ -33,27 +33,43 @@ function Form() {
 
   }
   return (
-    <div className="card" id="container">
-       {msg[0] !== 'U' ? "" : <Redirect to="/login" />}
+  <div className="hero min-h-screen bg-base-200">
+  {msg[0] !== 'U' ? "" : <Redirect to="/login" />}
       {_id? <Redirect to="/home" /> : ""} 
-      <form onSubmit={(e) => {
-        e.preventDefault()
-        dispatch(actions.login(input))
-      }}>
-        <div className="mb-3">
-          <label htmlFor="1" className="form-label">Email</label>
-          <input type="email" id="1" name='email' onChange={InputChange} value={input.email} className="form-control" />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="2" className="form-label">Password</label>
-          <input type="password" id="2" name='password' onChange={InputChange} value={input.password} className="form-control" />
-        </div>
-        <input type="submit" value="enviar" className="btn btn-primary" />
-      </form>
-      <br />
-      <p><Link to="/registro">Registrarse</Link></p>
+  <div className="hero-content flex-col lg:flex-row-reverse">
+    <div className="text-center lg:text-left">
+      <h1 className="text-5xl font-bold">Login now!</h1>
+      <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
     </div>
-  );
+    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+      <div className="card-body">
+	  <form onSubmit={(e) => {
+       e.preventDefault()
+       dispatch(actions.login(input))
+       }}>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Email</span>
+          </label>
+          <input type="text" name='email' onChange={InputChange} value={input.email} placeholder="email" className="input input-bordered" />
+			</div>
+			<div className="form-control">
+          <label className="label">
+            <span className="label-text">Password</span>
+          </label>
+          <input type="password" name='password' onChange={InputChange} value={input.password} placeholder="password" className="input input-bordered" />
+			</div>
+			<div className="form-control mt-6">
+		  <input type="submit" value="Login" className="btn btn-primary" />
+        </div>
+		</form>
+		<br />
+      <p><Link className="link link-primary" to="/registro">Registrarse</Link></p>
+      </div>
+    </div>
+  </div>
+</div>
+)
 }
 
 export default Form;

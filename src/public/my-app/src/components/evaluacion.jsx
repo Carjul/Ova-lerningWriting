@@ -3,12 +3,12 @@ export default function Evaluacion () {
     return (
         <section>
         <Nav />
-        <div className="contenedor">
+        <div className="flex flex-col items-center w-full h-full" id="contenedor">
 
-            <div className='uno'>
+            <div className='p-5'>
                 <p>evaluacion aqui</p>
             </div>
-            <div className='dos'>
+            <div className='p-5'>
                 <p>evaluacion dd</p>
             </div>
         </div>

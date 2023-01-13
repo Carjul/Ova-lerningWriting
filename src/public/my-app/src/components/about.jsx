@@ -3,9 +3,9 @@ export default function About () {
     return (
         <section>
         <Nav />
-        <div className="contenedor">
+        <div className="flex flex-col items-center w-full h-full" id="contenedor">
 
-            <div className='uno'>
+            <div className='p-5'>
                 <p>acerca de...</p>
             </div>
             

@@ -2,7 +2,7 @@ import {useState,useEffect} from "react";
 import {useSelector,useDispatch} from 'react-redux'
 import {Redirect,Link} from 'react-router-dom'
 import * as actions from "../redux/actions/index.js";
-import './registro.css'
+
 
 function LoginUp() {
 
@@ -26,37 +26,55 @@ function LoginUp() {
      
     }
   return (
-    <div className="card">
-     {msg.msg ==='usuario guardado'?<Redirect to="/login" />:""}
-
-     <form onSubmit={(e)=>{
-        e.preventDefault()
-        dispatch(actions.register(input))
-        }}>
-     <div className="mb-3">
-     <label htmlFor="1" className="form-label">Nombre</label>
-       <input type="text"  id="1" name="name" onChange={InputChange} value={input.name} className="form-control"/>
-     </div>
-     <div className="mb-3"> 
-     <label htmlFor="2" className="form-label">Correo</label>
-       <input type="email"  id="2" name="email" onChange={InputChange} value={input.email} className="form-control"/>
-     </div>
-     <div className="mb-3">
-     <label htmlFor="3" className="form-label">Contraseña</label>
-       <input type="password"  id="3" name="password" onChange={InputChange} value={input.password} className="form-control"/>
-     </div>
-     <div className="mb-3">
-     <label htmlFor="4" className="form-label">Repetir contraseña</label>
-       <input type="password"  id="4" className="form-control"/>
-     </div>
-     
-       
-      
-       <input type="submit" className="btn btn-dark" value="enviar"  />
-     </form>
-     <br />
-     <p><Link to="/login">Iniciar Sección</Link></p>
+  
+  <div className="hero min-h-screen bg-base-200">
+  {msg.msg ==='usuario guardado'?<Redirect to="/login" />:""}
+  <div className="hero-content flex-col lg:flex-row-reverse">
+    <div className="text-center lg:text-left">
+      <h1 className="text-5xl font-bold">Register now!</h1>
+      <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
     </div>
+    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+      <div className="card-body">
+	  <form onSubmit={(e) => {
+       e.preventDefault()
+       dispatch(actions.register(input))
+       }}>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Nombre</span>
+          </label>
+		  <input type="text"  name="name" onChange={InputChange} value={input.name} placeholder="name" className="input input-bordered"/>
+			</div>
+			<div className="form-control">
+          <label className="label">
+            <span className="label-text">Correo</span>
+          </label>
+          <input type="email" name="email" onChange={InputChange} value={input.email} placeholder="email" className="input input-bordered" />
+			</div>
+			<div className="form-control">
+          <label className="label">
+            <span className="label-text">Contraseña</span>
+          </label>
+          <input type="password"   name="password" onChange={InputChange} value={input.password}  className="input input-bordered" />
+			</div>
+			<div className="form-control">
+          <label className="label">
+            <span className="label-text">Repetir contraseña</span>
+          </label>
+          <input type="password" className="input input-bordered" />
+			</div>
+			<div className="form-control mt-6">
+		  <input type="submit" value="Registrase" className="btn btn-primary" />
+        </div>
+		</form>
+		<br />
+      <p><Link className="link link-primary" to="/login">Iniciar Sección</Link></p>
+      </div>
+    </div>
+  </div>
+</div>
+    
   );
 }
 

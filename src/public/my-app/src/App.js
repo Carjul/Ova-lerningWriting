@@ -1,4 +1,3 @@
-import './App.css';
 import Form from './components/form';
 import { Route, Switch, Redirect } from 'react-router-dom'
 import React, { useEffect } from 'react';
