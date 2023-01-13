@@ -8,10 +8,10 @@ export const TEMA = "TEMA";
 export function chageTema(data) {
   return { type: TEMA, payload:data }
 }
-const api='http://localhost:3001'
+//const api='http://localhost:3001'
 export function login(data) {
     return (dispatch) => {
-      axios.post(api+'/login', data)
+      axios.post('/login', data)
         .then(function (response) {
           dispatch({ type: ENV_DATA, payload:[ response.data]})
        
@@ -25,7 +25,7 @@ export function login(data) {
 
   export function register(data) {
     return (dispatch) => {
-      axios.post(api+'/usuario', data)
+      axios.post('/usuario', data)
         .then(function (response) {
           dispatch({ type: REGISTRO, payload: response.data})
        
@@ -40,7 +40,7 @@ export function login(data) {
   export function salir () {
    
     return (dispatch) => {
-      axios.get(api+'/salir')
+      axios.get('/salir')
         .then(function (response) {
           dispatch({ type: SALIR, payload: response.data})
         })
@@ -55,7 +55,7 @@ export function login(data) {
   export function getDataUser () {
    
     return (dispatch) => {
-      axios.get(api+'/data-user')
+      axios.get('/data-user')
         .then(function (response) {
           dispatch({ type: USER_DATA, payload: response.data})
         })
