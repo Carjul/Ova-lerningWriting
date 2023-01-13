@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.cd7210e6.css",
-    "main.js": "/static/js/main.d0c2ffc2.js",
+    "main.js": "/static/js/main.c4576310.js",
     "static/media/img.jpg": "/static/media/img.13678b3570891931b2ef.jpg",
     "static/media/walper.jpg": "/static/media/walper.e0821d726f20300255bc.jpg",
     "static/media/audio-1.mpeg": "/static/media/audio-1.205e364cebc2ebcfcf2f.mpeg",
     "index.html": "/index.html",
     "main.cd7210e6.css.map": "/static/css/main.cd7210e6.css.map",
-    "main.d0c2ffc2.js.map": "/static/js/main.d0c2ffc2.js.map"
+    "main.c4576310.js.map": "/static/js/main.c4576310.js.map"
   },
   "entrypoints": [
     "static/css/main.cd7210e6.css",
-    "static/js/main.d0c2ffc2.js"
+    "static/js/main.c4576310.js"
   ]
 }
