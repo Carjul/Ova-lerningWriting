@@ -2,7 +2,7 @@ import Nav from './nav';
 export default function Evaluacion () {
     return (
         <section>
-        <Nav />
+        <Nav props={3} />
         <div className="flex flex-col items-center w-full h-full" id="contenedor">
 
             <div className='p-5'>

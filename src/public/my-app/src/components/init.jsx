@@ -12,6 +12,7 @@ export default function Init() {
            limpiar()
         } 
     },[data])
+	document.getElementById('root').setAttribute('data-theme', 'night');
     return (
 		<div className="hero min-h-screen" style={{ backgroundImage: `url("${img}")` }}>
   <div className="hero-overlay bg-opacity-60"></div>

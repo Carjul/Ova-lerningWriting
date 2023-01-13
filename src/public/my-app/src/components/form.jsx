@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from 'react-redux'
 import * as actions from "../redux/actions/index.js";
 import { Redirect, Link } from 'react-router-dom'
-
+import wallper from '../assets/walper.jpg'
 
 function Form() {
   var _id;
@@ -33,7 +33,8 @@ function Form() {
 
   }
   return (
-  <div className="hero min-h-screen bg-base-200">
+  <div className="hero min-h-screen" style={{ backgroundImage: `url("${wallper}")` }}>
+  <div className="hero-overlay bg-opacity-60"></div>
   {msg[0] !== 'U' ? "" : <Redirect to="/login" />}
       {_id? <Redirect to="/home" /> : ""} 
   <div className="hero-content flex-col lg:flex-row-reverse">

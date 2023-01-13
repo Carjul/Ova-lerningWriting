@@ -2,7 +2,7 @@ import {useState,useEffect} from "react";
 import {useSelector,useDispatch} from 'react-redux'
 import {Redirect,Link} from 'react-router-dom'
 import * as actions from "../redux/actions/index.js";
-
+import wallper from '../assets/walper.jpg'
 
 function LoginUp() {
 
@@ -27,7 +27,8 @@ function LoginUp() {
     }
   return (
   
-  <div className="hero min-h-screen bg-base-200">
+  <div className="hero min-h-screen" style={{ backgroundImage: `url("${wallper}")` }}>
+  <div className="hero-overlay bg-opacity-60"></div>
   {msg.msg ==='usuario guardado'?<Redirect to="/login" />:""}
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">

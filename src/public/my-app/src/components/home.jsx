@@ -4,10 +4,10 @@ export default function Home() {
 
     return (
         <section>
-            <Nav />
+            <Nav props={1}/>
             <div className="flex flex-col items-center w-full h-full" id="contenedor">
                 <div className='p-5'>
-                    <h1>Writing</h1>
+                    <h1  className="card-title" >Writing</h1>
                     <p>Es la capacidad de producir un texto coherente y relevante. La ortografía y las estructuras gramaticales son los mayores obstáculos a superar, aunque supone un reto menor que la escritura porque da más tiempo a pensar y, en ocasiones, permite usar un diccionario. Practicamos esta habilidad cuando escribimos mensajes, notas o textos.
 
 					</p>
