@@ -3,7 +3,7 @@ import {ENV_DATA,REGISTRO,SALIR,USER_DATA,TEMA} from '../actions'
 const initialState = {
   DataUser:[],
   resapimsg:{},
-  tema:'cupcake'
+  tema:'light'
 };
 
 const rootReducer = (state = initialState, action) => {
