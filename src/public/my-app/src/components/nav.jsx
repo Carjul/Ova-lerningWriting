@@ -17,7 +17,7 @@ export default function Nav(params) {
   }
   const temas = ["cupcake", "bumblebee", "emerald", "corporate", "synthwave", "retro", "valentine", "halloween", "garden", "forest", "aqua", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter","dark"]
   return (
-<div className="navbar bg-base-200 border-t">
+<div className="navbar bg-base-200">
   <div className="flex-1 flex-row flex-wrap">
 		  <Link className="btn btn-outline btn-primary border-none normal-case text-xl" to="/">Ova Ingles</Link>
           {props===1?<Link className="btn btn-ghost bg-primary normal-case text-xl" to="/home">Home</Link>:<Link className="btn btn-ghost normal-case text-xl" to="/home">Home</Link>}

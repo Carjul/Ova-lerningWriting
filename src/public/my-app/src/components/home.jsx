@@ -7,7 +7,7 @@ export default function Home() {
             <Nav props={1}/>
             <div className="flex flex-col items-center w-full h-full" >
 			
-				<div className="card w-full h-full bg-neutral text-neutral-content border">
+				<div className="card w-full h-full bg-neutral text-neutral-content border border-secondary">
 					<div className="card-body items-center text-center">
 						<h1 className="card-title">Writing</h1>
 						<p>Es la capacidad de producir un texto coherente y relevante. La ortografía y las estructuras gramaticales son los mayores obstáculos a superar, aunque supone un reto menor que la escritura porque da más tiempo a pensar y, en ocasiones, permite usar un diccionario. Practicamos esta habilidad cuando escribimos mensajes, notas o textos.
@@ -23,7 +23,7 @@ export default function Home() {
 					</div>
 				</div>
 			
-				<div className="card w-full h-1000px bg-neutral text-neutral-content border">
+				<div className="card w-full h-1000px bg-neutral text-neutral-content border  border-secondary">
 					<div className="card-body">
 					<br/>
 					<h1 className="card-title">Verbo To be</h1>
@@ -81,7 +81,7 @@ export default function Home() {
 				</div>
 				
 			
-				<div className="card w-full h-full bg-neutral text-neutral-content border">
+				<div className="card w-full h-full bg-neutral text-neutral-content border  border-secondary">
 					<div className="card-body ">
 						<h1 className="card-title">Pronombres personales en función del sujeto en inglés</h1>
 						

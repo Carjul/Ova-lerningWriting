@@ -18,8 +18,8 @@ export default function Init() {
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-      <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <h1 className="mb-5 text-5xl font-bold">Hola chicos</h1>
+      <p className="mb-5">El siguiente es un OVA (objeto virtual de aprendizaje) que les ayudará a aprender inglés con alguno recursos, actividades y evaluaciones</p>
       <Link to='/login' className="btn btn-primary">Inicio</Link>
     </div>
   </div>
