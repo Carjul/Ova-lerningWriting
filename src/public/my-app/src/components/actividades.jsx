@@ -21,6 +21,10 @@ const handleSpeedChange = (event) => {
 					<iframe src="https://h5p.org/h5p/embed/1341103" width="100%" height="433" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="pronombres personales"></iframe>
 					<script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 				</div>
+				<div className='p-5  w-full h-full'>
+				<iframe src="https://h5p.org/h5p/embed/1341384" width="100%" height="1036" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Write the correct profession"></iframe>
+				<script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+				</div>
 				<div className='p-5  w-full h-full' >
 					 <h1  className="card-title">Escucha y Escribe las palabras correctas</h1>
 					<br/>

@@ -21,7 +21,7 @@ const GetUserId =async(req,res)=>{
 
 const postUser = async(req,res)=>{
     try {
-        const {name, email, password, avatar="https://i.pravatar.cc/300"}= req.body
+        const {name, email, password, avatar=`https://robohash.org/${password}`}= req.body
        await USER.create({name, email, password, avatar})
         res.status(200).json({msg:"usuario guardado"})
     } catch (error) {
